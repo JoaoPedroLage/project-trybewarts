@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
