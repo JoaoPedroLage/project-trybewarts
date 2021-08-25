@@ -21,17 +21,48 @@
     </header>
     <main>
         <form id="evaluation-form">
-            <input id="input-name" type="text" name="firstName" placeholder="Nome">
-            <input id="input-lastname" type="text" name="LastName" placeholder="Sobrenome">
-            <input id="input-email" type="text" name="emailRegister" placeholder="Email">
-            <select id="house">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
+            <fieldset>
+                <input id="input-name" type="text" name="firstName" placeholder="Nome">
+                <input id="input-lastname" type="text" name="LastName" placeholder="Sobrenome">
+                <input id="input-email" type="text" name="emailRegister" placeholder="Email">
+                Casa: <select id="house">
+                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                    <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label id="label-family" for="family">Qual sua família?</label>
+                <br>
+                <input type="radio" name="family" value="Frontend">Família Frontend
+                <input type="radio" name="family" value="Backend">Família Backend
+                <input type="radio" name="family" value="FullStack">Família FullStack
+                <br>
+                <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                <br>
+                <input type="checkbox" value="HoFs">
+                <input type="checkbox" value="Jest">
+                <input type="checkbox" value="Promises">
+                <input type="checkbox" value="React">
+                <input type="checkbox" value="SQL">
+                <input type="checkbox" value="Python">
+            </fieldset>
+            <fieldset id="third">
+                <label id="label-rate">Como você avalia a Trybewarts?</label>
+            </fieldset>
+            <fieldset>
+                <label for= 'textarea' class="textarea">Deixe seu comentário:</label>
+                <textarea id="textarea" maxlength="500"></textarea>
+                <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+                <input type="checkbox" id="agreement">
+            </fieldset>
+            <button id="submit-btn" type="submit">Enviar</button>
         </form>
         <img id="trybewarts-forms-logo" alt="Imagem logo colorida" src="images/trybewarts-colored.svg">
+        <footer>
+            Direitos reservados à Trybewarts©
+        </footer>
     </main>
     <script src="script.js"></script>
 </body>
