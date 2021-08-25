@@ -7,10 +7,23 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  justify-content: space-around;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   height: 300px;
+}
+
+.header h1 {
+    text-align: center;
 }
 
 .trybewarts-login {
   display: flex;
+}
+
+main, #evaluation-form {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
 }
