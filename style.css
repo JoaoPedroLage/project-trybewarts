@@ -20,8 +20,7 @@
   display: flex;
 }
 
-main,
-#evaluation-form {
+main , #evaluation-form {
   display: flex;
 }
 
