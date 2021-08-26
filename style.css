@@ -51,9 +51,9 @@ main {
   width: 160px;
 }
 
-#family {
+.family {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   width: 400px;
 }
 
