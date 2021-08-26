@@ -1,36 +1,62 @@
 * {
   margin: 0;
-  font-family: sans-serif;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
-  height: 300px;
-}
-
-.header h1 {
+  align-items: center;
   text-align: center;
+  color: white;
 }
 
-.trybewarts-login {
-  display: flex;
+.header img {
+  height: 50px;
 }
 
-main , #evaluation-form {
+main {
   display: flex;
 }
 
 #evaluation-form {
+  display: flex;
   width: 675px;
-  height: 400px;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-  text-align: left;
+}
+
+#data {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  height: 50px;
+}
+
+#data input[type='text'] {
+  width: 250px;
+}
+
+#data select {
+  width: 160px;
+}
+
+#family {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 400px;
+}
+
+#family-learn {
+  display: flex;
+}
+
+#learn input[type='checkbox'] {
+  width: 80px;
 }

@@ -9,8 +9,8 @@ function createRateButtons() {
   for (let i = 1; i <= 10; i += 1) {
     const createInput = document.createElement('input');
     const createSpan = document.createElement('span');
-    createSpan.innerText = i;
     createInput.type = 'radio';
+    createSpan.innerText = i;
     createInput.name = 'rate';
     createInput.value = i;
     rateButtons.appendChild(createSpan);
@@ -18,19 +18,12 @@ function createRateButtons() {
   }
 }
 
-createRateButtons();
-
 buttonLogin.addEventListener('click', () => {
   if (inputEmail.value === 'tryber@teste.com' && inputPassword.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
   }
-});
-
-submitButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  console.log('estou funcionando');
 });
 
 function disableSubmitButton() {
@@ -41,5 +34,8 @@ function disableSubmitButton() {
   }
 }
 
-disableSubmitButton();
-agreementCheck.addEventListener('click', disableSubmitButton);
+window.onload = () => {
+  createRateButtons();
+  submitButton.disabled = true;
+  agreementCheck.addEventListener('click', disableSubmitButton);
+};
