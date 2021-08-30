@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
     <header class="header">
         <img src="images/trybewarts-header-logo.svg" alt="Imagem do logo da TrybeWarts." class="trybewarts-header-logo">
@@ -71,13 +69,23 @@
             </fieldset>
         </form>
         <div>
-            <img id="trybewarts-forms-logo" alt="Imagem logo colorida" src="images/trybewarts-colored.svg">
+          <label for='textarea' class="textarea">Deixe seu comentário:</label>
+          <textarea id="textarea" maxlength="500"></textarea>
+          <span id="counter"></span>
+          <br>
+          <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+          <input class="subject" type="checkbox" id="agreement">
+          <button id="submit-btn" type="submit">Enviar</button>
         </div>
-    </main>
-    <footer>
-        Direitos reservados à Trybewarts©
-    </footer>
-    <script src="script.js"></script>
+      </fieldset>
+    </form>
+      <div>
+        <img id="trybewarts-forms-logo" alt="Imagem logo colorida" src="images/trybewarts-colored.svg">
+      </div>
+  </main>
+  <footer>
+    Direitos reservados à Trybewarts©
+  </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
