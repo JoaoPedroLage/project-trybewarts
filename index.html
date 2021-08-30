@@ -17,7 +17,7 @@
             <button id="confirmLogin">Entrar</button>
         </form>
     </header>
-    <main>
+    <main class="center-content">
         <form id="evaluation-form">
             <h2>Formulário de Avaliação</h2>
             <fieldset>
@@ -57,33 +57,21 @@
                     <label id="label-rate">Como você avalia a Trybewarts?</label>
                 </div>
                 <div>
-                    <label for='textarea' id="textarea" class="textarea">Deixe seu comentário:</label>
+                    <label for='textarea' class="textarea">Deixe seu comentário:</label>
                     <textarea id="textarea" maxlength="500"></textarea>
                     <span id="counter"></span>
                     <br>
-                    <label id="label-infos" for="agreement">Você concorda com o uso das informações
-                        acima?</label>
-                    <input type="checkbox" id="agreement">
+                    <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+                    <input class="subject" type="checkbox" id="agreement">
                     <button id="submit-btn" type="submit">Enviar</button>
                 </div>
             </fieldset>
         </form>
-        <div>
-          <label for='textarea' class="textarea">Deixe seu comentário:</label>
-          <textarea id="textarea" maxlength="500"></textarea>
-          <span id="counter"></span>
-          <br>
-          <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
-          <input class="subject" type="checkbox" id="agreement">
-          <button id="submit-btn" type="submit">Enviar</button>
-        </div>
-      </fieldset>
-    </form>
       <div>
         <img id="trybewarts-forms-logo" alt="Imagem logo colorida" src="images/trybewarts-colored.svg">
       </div>
   </main>
-  <footer>
+  <footer class="center-content">
     Direitos reservados à Trybewarts©
   </footer>
   <script src="script.js"></script>

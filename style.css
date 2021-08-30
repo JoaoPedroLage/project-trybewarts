@@ -4,6 +4,12 @@
   font-family: sans-serif;
 }
 
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -18,10 +24,6 @@
 }
 
 .trybewarts-login {
-  display: flex;
-}
-
-main {
   display: flex;
 }
 
